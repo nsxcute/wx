@@ -3,9 +3,9 @@
 namespace app\index\controller;
 use think\Db;
 use think\Controller;
-class List extends Controller
+class Notelist extends Controller
 {
-    public function list()
+    public function notelist()
     {
         echo   222222;
     }
