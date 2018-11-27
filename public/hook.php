@@ -3,4 +3,4 @@
 
 
 
-echo 666999;
+echo exec('whoami');
