@@ -6,6 +6,14 @@ class Index extends Controller
 {
     public function index()
     {
-        echo   111;
+        $data = [
+		'title' => input('post.title'),
+		'create_time' => date('Y-m-d H:i:s'),
+		'content' => input('post.text')		
+	];
+
+	$result = Db::name('article')->insert($data);
+	var_dump($result);
+	
     }
 }

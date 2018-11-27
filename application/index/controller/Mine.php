@@ -7,6 +7,12 @@ class Mine extends Controller
 {
     public function mine()
     {
-        echo   111;
+        var_dump($_GET);
+                    $data = [
+                        'title' => input('get.title')
+	];
+
+	$result = Db::name('article')->insert($data);
+	var_dump($result);
     }
 }
